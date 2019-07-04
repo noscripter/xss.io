@@ -24,6 +24,12 @@
     "helmet": "0.0.6",
     "connect-redis": "~1.4.0",
     "winston-loggly": "~0.6.0",
-    "browserify": "~1.13.5"
-  }
+    "browserify": "~1.13.5",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
